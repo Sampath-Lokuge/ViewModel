@@ -1,0 +1,44 @@
+﻿@model ASPViewModel.ViewModels.ProductViewModel
+
+<div class="boxedForm">
+
+    @using (Html.BeginForm())
+    {
+        Html.EnableClientValidation(true);
+
+        <ul style="margin-top:50px;">
+            <li style="width: 370px">
+                @Html.LabelFor(m => m.ProductCategories)
+                @Html.DropDownListFor(m => m.SelectedValue, new SelectList(Model.ProductCategories, "Id",
+                                             "CategoryName"), "-Please select a category -")
+                @Html.ValidationMessageFor(m => m.ProductCategory.Id)
+            </li>
+            <li style="width: 370px;margin-top:10px;">
+                @Html.LabelFor(m => m.ProductName)
+                @Html.EditorFor(m => m.ProductName)
+                @Html.ValidationMessageFor(m => m.ProductName)
+            </li>
+        </ul>
+        <div class="action">
+            <button class="actionButton" type="submit">
+                <span>Save</span>
+            </button>
+        </div>
+    }
+
+</div>
+
+<style>
+    #ProductName {
+        margin-left: 30px;
+    }
+
+    #SelectedValue {
+        margin-left: 5px;
+    }
+
+    .action {
+        margin-left: 200px;
+        margin-top: 5px;
+    }
+</style>
