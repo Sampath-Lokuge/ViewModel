@@ -1,10 +1,9 @@
- 
- How to Use ViewModel with ASP.NET MVC
- -------------------------------------
+How to Use ViewModel with ASP.NET MVC
+-------------------------------------
   
-  This Article shows how to use How to Use ViewModel with ASP.NET MVC Application.
+This Article shows how to use How to Use ViewModel with ASP.NET MVC Application.
   
-  The code accompanies an [Article of "How to Use ViewModel with ASP.NET MVC"](http://sampathloku.blogspot.com/2012/10/how-to-use-viewmodel-with-aspnet-mvc.html).
+The code accompanies an Article of ["How to Use ViewModel with ASP.NET MVC"](http://sampathloku.blogspot.com/2012/10/how-to-use-viewmodel-with-aspnet-mvc.html).
   
   What is a ViewModel ?
   
